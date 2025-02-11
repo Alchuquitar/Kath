@@ -1,61 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-h2{
-    color:#19e7d6;
+h2 {
+    color: #19e7d6;
 }
 
 body {
-    font-size: 20px ;
-    background:#e6e6e6;
-    color:#000000;
-    }
+    font-size: 20px;
+    background: #e6e6e6;
+    color: #000000;
+}
 
-header, .main, footer{
+header, .main, footer {
     width: 90%;
     max-width: 1000px;
-    margin:20px auto;
+    margin: 20px auto;
 }
 
-header nav{
-    background:#528FD5;
-    overflow:hidden;
+header nav {
+    background: #528FD5;
+    overflow: hidden;
 }
 
-header nav ul{
-    list-style:none ;
+header nav ul {
+    list-style: none;
 }
 
-header nav ul li{
-    float:left;
-}
-
-header nav ul li a{
-    padding:10px 20px;
-    display: block;
-    color: #ffffff;
-    text-decoration:none ;
-}
-
-header nav ul li a:hover{
-    background:#75ACEC ;
-}
-
-.main .articles{
-    width: 68%;
-    margin-right:1.5%;
+header nav ul li {
     float: left;
 }
 
-.main .articles article{
-    padding: 20px;
-    background: #ffffff;
-    margin-bottom:30px;
+header nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-aside{
+header nav ul li a:hover {
+    background: #75ACEC;
+}
+
+.main .articles {
+    width: 68%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article {
+    padding: 20px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+aside {
     width: 30%;
     background: #06a1a7;
     float: left;
@@ -63,7 +63,7 @@ aside{
     box-sizing: border-box;
 }
 
-footer{
+footer {
     background: #000000;
     color: #ffffff;
     clear: both;
@@ -71,17 +71,7 @@ footer{
     text-align: center;
 }
 
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-}
-/* Animación para el título */
+/* Estilos de las cartas y animaciones */
 .title {
     font-size: 5rem;
     color: #e91e63;
@@ -90,7 +80,6 @@ body {
     animation: titleAnimation 3s infinite alternate;
 }
 
-/* Animación constante para el título */
 @keyframes titleAnimation {
     0% {
         transform: translateX(0);
@@ -106,7 +95,6 @@ body {
     }
 }
 
-/* Fondo con cambio de color */
 body {
     animation: changeBackground 10s infinite alternate;
 }
@@ -119,22 +107,6 @@ body {
     100% { background-color: #ff66b2; }
 }
 
-/* Estilo de las cartas */
-.title {
-    font-size: 2rem;
-    color: #e91e63;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilo de las cartas */
 .cards {
     display: grid;
     grid-template-columns: repeat(5, 120px);
@@ -185,40 +157,18 @@ body {
     font-size: 1.2rem;
     padding: 20px;
     text-align: center;
-    transform: rotateY(180deg); /* La parte trasera se rota para que no sea visible */
+    transform: rotateY(180deg);
     border-radius: 15px;
-}
-
-/* Animación de voltear */
-@keyframes flipEffect {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(180deg); }
 }
 
 .card.flip {
     animation: flipEffect 0.6s forwards;
 }
 
-/* Animación para mostrar el mensaje */
-@keyframes magicMessage {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
 .card.open .back {
     animation: magicMessage 0.8s ease forwards;
 }
 
-/* Mejora en el texto */
-.card .back {
-    font-size: 1.4rem; /* Aumento el tamaño del texto para hacerlo más legible */
-    line-height: 1.5;
-    color: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Lluvia de corazones */
 .heart-rain {
     position: absolute;
     top: 0;
